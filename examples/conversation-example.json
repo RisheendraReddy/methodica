@@ -1,0 +1,37 @@
+{
+  "platform": "OpenAI",
+  "model": "gpt-4",
+  "title": "Example Conversation",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Hello! Can you help me understand how to use this AI chat history manager?",
+      "metadata": {
+        "timestamp": "2024-01-15T10:30:00Z"
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Of course! I'd be happy to help you understand how to use the AI chat history manager. This application allows you to store and manage all your AI conversations from different platforms in one centralized location.\n\nHere are some key features:\n1. You can add conversations manually or import them from JSON files\n2. Filter and search conversations by platform or model\n3. View statistics about your chat usage\n4. Manage API keys for different platforms\n\nWould you like me to explain any specific feature in more detail?",
+      "metadata": {
+        "timestamp": "2024-01-15T10:30:15Z"
+      }
+    },
+    {
+      "role": "user",
+      "content": "How do I import conversations?",
+      "metadata": {
+        "timestamp": "2024-01-15T10:31:00Z"
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "You can import conversations in a few ways:\n\n1. **Using the API directly**: Make a POST request to `/api/chat/conversations` with the conversation data\n2. **Using the import script**: Run `node scripts/import-conversation.js path/to/file.json`\n3. **Manual entry**: Use the web interface (if that feature is added)\n\nThe JSON format should include:\n- `platform`: The AI platform name (e.g., \"OpenAI\", \"Anthropic\")\n- `model`: The model name (e.g., \"gpt-4\", \"claude-3\")\n- `title`: Optional conversation title\n- `messages`: Array of message objects with `role` and `content`\n\nWould you like to see an example JSON structure?",
+      "metadata": {
+        "timestamp": "2024-01-15T10:31:20Z"
+      }
+    }
+  ]
+}
+
+
